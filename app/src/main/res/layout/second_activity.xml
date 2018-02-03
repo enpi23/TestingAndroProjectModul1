@@ -29,8 +29,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="34dp"
-            android:text="@string/dengan_milea" />
+            android:layout_marginBottom="32dp"
+            android:text="@string/dengan_milea"
+            android:textSize="20sp" />
 
     </RelativeLayout>
 
@@ -45,64 +46,75 @@
 
             <TextView
                 android:id="@+id/menumakantxt"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
+                android:layout_marginTop="14dp"
                 android:gravity="center"
-                android:text="Menu" />
+                android:text="Menu"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/txtmenu"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/menumakantxt"
                 android:gravity="center"
-                android:text="Makanan" />
+                android:text="Makanan"
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/porsimenutxt"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/txtporsi"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtmenu"
+                android:layout_marginTop="77dp"
                 android:gravity="center"
-                android:text="Porsi" />
+                android:text="Porsi"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/txtporsi"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/hargamenutxt"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginBottom="37dp"
+                android:layout_below="@+id/porsimenutxt"
                 android:gravity="center"
-                android:text="0" />
+                android:text="0"
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/hargamenutxt"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/txtharga"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtporsi"
+                android:layout_marginTop="66dp"
                 android:gravity="center"
-                android:text="Harga" />
+                android:text="Harga"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/txtharga"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
+                android:layout_below="@+id/hargamenutxt"
                 android:gravity="center"
-                android:text="IDR 0" />
+                android:text="0"
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
         </RelativeLayout>
 

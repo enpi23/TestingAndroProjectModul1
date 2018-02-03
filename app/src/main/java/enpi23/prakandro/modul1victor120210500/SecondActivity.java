@@ -31,6 +31,7 @@ public class SecondActivity extends AppCompatActivity {
             int nasiudukEatbus = 50000;
             int total = hargaporsi*nasiudukEatbus;
             String totalharga = String.valueOf(total);
+
             if (total>mymoney){
 
                 TextView txtmenu = (TextView) findViewById(R.id.txtmenu);
@@ -46,7 +47,8 @@ public class SecondActivity extends AppCompatActivity {
                 String shownotif = "Jangan makan malam disini uang kamu tidak cukup";
                 Toast showEatbus = Toast.makeText (this, shownotif, Toast.LENGTH_LONG);
                 showEatbus.show();
-            }else{
+            }
+            else{
                 TextView txtmenu = (TextView) findViewById(R.id.txtmenu);
                 TextView txtporsi = (TextView) findViewById(R.id.txtporsi);
                 TextView txtdinner = (TextView) findViewById(R.id.txtdinner);
@@ -62,10 +64,12 @@ public class SecondActivity extends AppCompatActivity {
                 showEatbus.show();
             }
 
-        }else {
+        }
+        else if (restaurant.equalsIgnoreCase("Eatbus")){
             int nasiudukAbnormal = 30000;
             int total = hargaporsi*nasiudukAbnormal;
             String totalharga = String.valueOf(total);
+
             if (total>mymoney){
 
                 TextView txtmenu = (TextView) findViewById(R.id.txtmenu);
@@ -81,7 +85,8 @@ public class SecondActivity extends AppCompatActivity {
                 String shownotif = "Jangan makan malam disini uang kamu tidak cukup";
                 Toast showEatbus = Toast.makeText (this, shownotif, Toast.LENGTH_LONG);
                 showEatbus.show();
-            }else{
+            }
+            else{
                 TextView txtmenu = (TextView) findViewById(R.id.txtmenu);
                 TextView txtporsi = (TextView) findViewById(R.id.txtporsi);
                 TextView txtdinner = (TextView) findViewById(R.id.txtdinner);
